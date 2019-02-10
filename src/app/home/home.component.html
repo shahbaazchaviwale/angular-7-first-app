@@ -1,0 +1,13 @@
+<p [class.gray]="changeColor" id="gray">
+  {{ addName }}
+</p>
+
+<button (click)="changeTitle()">{{btnText}}</button>
+
+<p [ngStyle]="{
+  'color': changeColorSecond ? 'red' : 'black'
+}" id="graySecond">
+  {{ addNameSecond }}
+</p>
+
+<button (click)="changeTitleSecond()">{{btnNextSecond}}</button>
